@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+body {      
+  font-family: arial;
+  font-size: 12px;
+  background-color: #ccc;
+}
+
+header {
+  background:#7f9000;
+  height:56px;
+  color: white;
+}
+
+header img {
+  float: left;
+  margin-top: 8px;  
+}
+
+header input {
+  float: left;
+  width: 400px;
+  height: 34px;
+  margin-top: 11px;
+  margin-left: 10px;
+}
+
+section {
+  background-color: white;
+}
+
+nav {
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.wrapper {
+  width: 996px;
+  margin: auto;
+}
+
+footer {
+  clear: both;
+}

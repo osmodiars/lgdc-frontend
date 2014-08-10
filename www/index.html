@@ -1,0 +1,41 @@
+<html lang="es" ng-app="app">
+  <head>
+    <title>LaGuiaDeConsulta.com</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />    
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="wrapper">
+        <a href="#"><img src="assets/img/logo.png" alt="LaGuiaDeConsulta.com" /></a>
+        <input type="text" />
+        <nav>
+          <ul>
+            <li><a href="#beat">Publicar Aviso</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="wrapper" ng-view></section>
+    <footer>
+      <div class="wrapper">
+      copy right2013
+      </div>
+    </footer>
+    <script src="assets/js/vendor/angular.min.js"></script>
+    <script src="assets/js/vendor/angular-route.min.js"></script>
+    <script src="app/controllers/app.js"></script>
+    <script src="app/controllers/route.js"></script>
+    <!-- Start Mobile -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style-mobile.css" />
+    <script type="assets/text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript">
+      app.initialize();
+    </script>
+    <!-- End Mobile -->
+  </body>
+</html>

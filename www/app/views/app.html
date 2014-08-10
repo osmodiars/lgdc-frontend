@@ -1,0 +1,17 @@
+<form>
+  <label>Sport</label>
+  <select ng-model="match.sport">
+    <option>Soccer</option>
+    <option>Basquet</option>
+    <option>Voley</option>
+  </select>
+  <label>Team1</label> <input ng-model="match.team1"/> : </label> <input ng-model="match.win1" class="number" />
+  <label>Team2</label> <input ng-model="match.team2"/> : </label> <input ng-model="match.win2" class="number" />
+  <label>Draw</label> <input ng-model="match.draw" class="number" />
+  <button ng-click="add(match)">Add</button>
+  <ul>
+    <li ng-repeat="match in matchs">
+      {{match.team1 + ":" + match.win1 + " - " + match.team2 + ":" + match.win2}}
+    </li>
+	</ul>
+</form>
